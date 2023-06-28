@@ -1,0 +1,90 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="420" d:DesignHeight="550"
+             x:Class="TMT.Views.LoginView" 		
+			 Width="420" Height="550">
+	
+	
+	<Grid RowDefinitions="40,auto,*" ColumnDefinitions="*,3*,*" Background="#161B2D" >
+		<Grid  Grid.Row="0" ColumnDefinitions="Auto" HorizontalAlignment="Left" >
+
+			<Border  Background="#454957" BorderThickness="1"  CornerRadius="0,35" Width="415" Height="50" Margin="2,5,0,0">
+
+				<TextBlock Text="Time Management Tools" Foreground="Wheat" FontSize="26" HorizontalAlignment="Center"  Margin="0,10,0,0" FontStyle="Italic" />
+
+			</Border>
+		</Grid>
+
+		<Grid  Grid.Row="1" Grid.Column="0"  Margin="50,0,0,0" ColumnDefinitions="Auto,Auto,Auto" RowDefinitions="Auto,Auto,Auto,Auto,Auto" >
+			<Grid.Styles>
+				<Style Selector="Image">
+
+					<Setter Property="Margin" Value="0,20,0,0"/>
+
+					<Setter Property="HorizontalAlignment" Value="Left"/>
+
+					<Setter Property="Width" Value="30"/>
+
+
+
+
+
+				</Style>
+				<Style Selector="TextBlock">
+					<Setter Property="Foreground" Value="Wheat"/>
+					<Setter Property="FontSize" Value="18"/>
+					<Setter Property="Margin" Value="0,10"/>
+					<Setter Property="FontStyle" Value="Italic"/>
+				</Style>
+				<Style Selector="TextBox">
+					<Setter Property="Background" Value="Transparent"/>
+					<Setter Property="BorderThickness" Value="0,0,0,1"/>
+					<Setter Property="Margin" Value="2,20,0,0" />
+					<Setter Property="Width" Value="320" />
+					<Setter Property="FontSize" Value="22"/>
+					<Setter Property="Foreground" Value="Wheat"/>
+
+
+
+				</Style>
+
+
+				<Style Selector="Button" >
+					<Setter Property="Background" Value="#454957"/>
+					<Setter Property="CornerRadius" Value="15"/>
+					<Setter Property="Padding" Value="16"/>
+					<Setter Property="Margin" Value="0,20,0,0"/>
+					<Setter Property="HorizontalAlignment" Value="Center"/>
+					<Setter Property="Foreground" Value="White"/>
+
+				</Style>
+				<Style Selector="Button:pointerover /template/ ContentPresenter" >
+					<Setter Property="Background" Value="Gray"/>
+					<Setter Property="CornerRadius" Value="15"/>
+					<Setter Property="RenderTransform" Value="scale(0.9)"/>
+				</Style>
+			</Grid.Styles>
+
+			<TextBlock Text="Log In" FontFamily="Montserrat" Foreground="Wheat" Grid.Row="1" Grid.Column="0" Margin="0,50,0,20" FontSize="24"/>
+
+			<StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="2">
+				<Image Source="/Assets/user.ico"   />
+				<TextBox x:Name="Email" Watermark="Email"  />
+			</StackPanel>
+
+			<StackPanel Grid.Row="3"  Grid.Column="0" Orientation="Horizontal">
+				<Image Source="/Assets/key.ico" Grid.Row="3" />
+				<TextBox x:Name="Password" Watermark="Password" PasswordChar="#"  />
+			</StackPanel>
+			<Button   Grid.Row="4" Grid.Column="0"   Content="Login" />
+
+
+		</Grid>
+		<WrapPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Left" >
+			<TextBlock Text="CLick on" FontSize="23" Foreground="White" Margin="0,20"  />
+			<Button  Content="Register" Grid.Row="0" Grid.Column="1" Width="110" FontSize="23" Foreground="Wheat" Background="Transparent" Command="{Binding $parent[Window].DataContext.SwitchPageToRegister}" />
+		</WrapPanel>
+	</Grid>
+</UserControl>
