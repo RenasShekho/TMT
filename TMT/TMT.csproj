@@ -10,6 +10,7 @@
   <ItemGroup>
     <Folder Include="Models\" />
     <AvaloniaResource Include="Assets\**" />
+    <Folder Include="TemplateControls\" />
     <None Remove=".gitignore" />
     <None Remove="Assets\key.ico" />
     <None Remove="Assets\user.ico" />

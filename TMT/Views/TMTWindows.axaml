@@ -1,0 +1,42 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1100" d:DesignHeight="550"
+        x:Class="TMT.Views.TMTWindows"
+        Title="TMTWindows">
+	
+	<Grid RowDefinitions="40,*" ColumnDefinitions="Auto,8*,*" Background="#222222">
+		<!--calender-->
+		<WrapPanel Grid.Column="0" Grid.Row="1"  Margin="10,20,10,20" >
+			<Border  BorderThickness="2" CornerRadius="20"  >
+			<Calendar SelectionMode="SingleDate" CornerRadius="20"  Background="#0B1E3F" Foreground="Wheat" BorderBrush="#6EC0FF" />
+			</Border>
+				</WrapPanel>
+		<!--Time Schedule-->
+		<Border Grid.Column="1" Grid.Row="1" CornerRadius="20"  Background="DarkGray" Margin="0,20,0,5" >
+		<Grid  RowDefinitions="auto,*,*,*" ColumnDefinitions="auto,*,*,*,*,*,*,*"   >
+			<StackPanel Margin="0,5,0,0" Orientation="Horizontal" Grid.Row="0" Grid.Column="1" >
+				<TextBlock FontSize="25" Foreground="White" Text="Sat" Height="50" Width="85" Background="#0B1E3F" Margin="0,0,2,0"/>
+				<TextBlock FontSize="25" Foreground="White" Text="Sun" Height="50" Width="85" Background="#0B1E3F" Margin="2,0"/>
+				<TextBlock FontSize="25" Foreground="White" Text="Mon" Height="50" Width="85" Background="#0B1E3F" Margin="2,0"/>
+				<TextBlock FontSize="25" Foreground="White" Text="Tue" Height="50" Width="85" Background="#0B1E3F" Margin="2,0"/>
+				<TextBlock FontSize="25" Foreground="White" Text="Wed" Height="50" Width="85" Background="#0B1E3F" Margin="2,0"/>
+				<TextBlock FontSize="25" Foreground="White" Text="Thurs" Height="50" Width="70" Background="#0B1E3F" Margin="2,0"/>
+				<TextBlock FontSize="25" Foreground="White" Text="Fri" Height="50" Width="70" Background="#0B1E3F" Margin="2,0"/>
+			</StackPanel>
+			<StackPanel Orientation="Vertical" Grid.Row="1" HorizontalAlignment="Left" Margin="5" >
+				<Border  Background="#0B1E3F" Margin="0,2" CornerRadius="5">
+				<TextBlock FontSize="22" Foreground="White" Text="0.00 - 6.00" Height="100" Width="60" />
+				</Border>
+				<TextBlock FontSize="22" Foreground="White" Text="Mon" Height="100" Width="60"  Background="#0B1E3F" Margin="0,2"/>
+				<TextBlock FontSize="22" Foreground="White" Text="Mon" Height="100" Width="60"  Background="#0B1E3F" Margin="0,2"/>
+				<TextBlock FontSize="22" Foreground="White" Text="Mon" Height="100" Width="60"  Background="#0B1E3F" Margin="0,2"/>
+		
+			</StackPanel>
+		</Grid>
+			</Border>
+		<Border CornerRadius="20" Background="DarkGray" Grid.Column="3" Grid.Row="1"  Margin="10,20">
+		</Border>
+	</Grid>
+</Window>
