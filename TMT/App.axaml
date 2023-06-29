@@ -9,4 +9,12 @@
     <Application.Styles>
         <FluentTheme Mode="Light"/>
     </Application.Styles>
+
+	<Application.Resources>
+		<SolidColorBrush x:Key="DarkGray" >#222222</SolidColorBrush>
+		<SolidColorBrush x:Key="LightGray" >#A9A9A9</SolidColorBrush>
+		<SolidColorBrush x:Key="LightBlue" >#6EC0FF</SolidColorBrush>
+		<SolidColorBrush x:Key="DarkBlue" >#0B1E3F</SolidColorBrush>
+
+	</Application.Resources>
 </Application>
