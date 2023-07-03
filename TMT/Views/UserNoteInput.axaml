@@ -1,0 +1,29 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="250"
+             x:Class="TMT.Views.UserNoteInput">
+	<Grid RowDefinitions="40,*,auto" ColumnDefinitions="*,*,*"  Background="Gray">
+		<Grid.Styles >
+			<Style Selector="Button">
+				<Setter Property="Background" Value="Transparent"/>
+				<Setter Property="Width" Value="40"/>
+				<Setter Property="Grid.Column" Value="3"/>
+				
+			</Style>	
+		</Grid.Styles>
+		<Grid ColumnDefinitions="*,*,*" Grid.Column="0" Background="Black" Grid.ColumnSpan="3" >
+		<Border HorizontalAlignment="Right" Grid.Column="3" >
+				<Button >
+					<Image Source="avares://TMT/Assets/close.ico"/>
+				</Button>
+		</Border>
+		</Grid>
+			<TextBox Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="1" Margin="10" CornerRadius="15"></TextBox>
+		<Button Content="Save" Grid.Column="3" Width="50" Grid.Row="3" Background="Black" Foreground="White" Margin="5">
+			
+		</Button>
+	</Grid>
+
+</UserControl>
