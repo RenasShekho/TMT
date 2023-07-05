@@ -19,7 +19,7 @@ namespace TMT.ViewModels
 
         private string _password;
 
-        public string Pasword
+        public string Password
         {
             get => _password;
             set => this.RaiseAndSetIfChanged(ref _password, value);
