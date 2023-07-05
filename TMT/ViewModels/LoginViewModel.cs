@@ -9,16 +9,22 @@ namespace TMT.ViewModels
 {
     internal class LoginViewModel:ViewModelBase
     {
-        //private string _name = "HelLo";
+        private string _email ;
 
-        //public string Name
-        //{
-        //    get => _name;
-        //    set => this.RaiseAndSetIfChanged(ref _name, value);
-        //}
+        public string Email
+        {
+            get => _email;
+            set => this.RaiseAndSetIfChanged(ref _email, value);
+        }
 
+        private string _password;
 
-        
+        public string Pasword
+        {
+            get => _password;
+            set => this.RaiseAndSetIfChanged(ref _password, value);
+        }
+
     }
 
 }
